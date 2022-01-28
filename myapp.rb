@@ -7,8 +7,8 @@ get '/' do
   erb :home
 end
 
-get '/aboutme' do
-  erb :aboutme
+get '/about_me' do
+  erb :about_me
 end
 
 get '/pullrequests' do
