@@ -1,0 +1,26 @@
+<% title = "Welcome" %>
+<!doctype html>
+<html lang ="en">
+<head>
+  <title> <%= title %> </title>
+  <meta charset = "utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1> <%= title %> </h1>
+    <nav>
+      <ul>
+        <li><a href = "/" title = "Home Head"> Home </a> </li>
+        <li><a href = "/about_me" title = "About Me"> Sobre Mim </a> </li>
+        <li><a href = "/pullrequests" title = "PRs"> PRs </a> </li>
+        <li><a href = "/education" title = "Education"> Formação </a> </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <%= yield%>
+  </section>
+</body>
+<html>
