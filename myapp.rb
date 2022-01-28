@@ -4,17 +4,17 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 get '/' do
-  'Index!'
+  erb :home
 end
 
 get '/aboutme' do
-  'Sobre Mim'
+  erb :aboutme
 end
 
 get '/pullrequests' do
-  'Páginas com as minhas PRs'
+  erb :pullrequests
 end
 
 get '/education' do
-  'Página com minhas informações educacionais'
+  erb :education
 end
